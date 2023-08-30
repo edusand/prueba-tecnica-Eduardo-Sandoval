@@ -4,11 +4,9 @@ Configuracion:
 	git clone https://github.com/edusand/prueba-tecnica-tidingo.git
 	cd prueba-tecnica-tidingo
 	
-	instalar nodejs de la pagina oficial o instalar homebrew para `brew install node`(mac)
-	sudo dnf install nodejs (fedora linux 38)
+	sudo dnf install nodejs
 	npm install
 	
-	brew install openssl (mac)
 	sudo dnf install openssl
 	openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.cert
 ```
