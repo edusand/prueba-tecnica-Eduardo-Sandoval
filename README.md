@@ -11,7 +11,7 @@ Configuracion:
 	brew install openssl (mac)
 	sudo dnf install openssl
 	openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.cert
-```
+
 	SSL es necesario para usar geolocalizacion en lugares aparte de localhost (android me da mejor precision que fedora)
 	(funciona con valores vacios)
 		Country Name: []
@@ -23,7 +23,7 @@ Configuracion:
 		Email Address: []
 ```
 
-```npm start```
+npm start
 
 ir a `https://localhost:8000`
 o a `https://<ip-de-la-maquina-en-lan>:8000` (es necesario abrir puertos en la maquina)
