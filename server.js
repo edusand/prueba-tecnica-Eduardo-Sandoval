@@ -6,8 +6,8 @@ const app = express();
 const PORT = 8000;
 const host = 'localhost';
 const options = {
-	key: fs.readFileSync("./env/server.key"),
-	cert: fs.readFileSync("./env/server.cert")
+	key: fs.readFileSync("./server.key"),
+	cert: fs.readFileSync("./server.cert")
 };
 
 app.use(express.static('./public/'));
