@@ -1,6 +1,6 @@
 // TODO: agregar banderas y fotografias del pais/ciudad y un mapa para seleccionar
 // aqui va tu llave llave
-const API_KEY = ""; // https://www.weatherapi.com/my/
+const API_KEY = "bfa3486f945e4d7eb12172044232608"; // https://www.weatherapi.com/my/
 
 // elementos del DOM
 const search_btn = document.querySelector(".search-btn");
