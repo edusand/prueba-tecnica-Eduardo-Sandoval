@@ -14,16 +14,14 @@ Configuracion:
 ```
 	SSL es necesario para usar geolocalizacion en lugares aparte de localhost (android me da mejor precision que fedora)
 	(funciona con valores vacios)
-		Country Name: MX
-		State or Province: Nayarit
-		City: Tepic
-		Organization Name: [Default Company]
+		Country Name: []
+		State or Province: []
+		City: []
+		Organization Name: []
 		Organization Unit Name: []
 		Common Name: localhost
 		Email Address: []
 ```
-
-Ahora tomas tu API Key y la insertas como valor para la variable `API_KEY` de `main.js`
 
 ```npm start```
 
