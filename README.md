@@ -1,8 +1,8 @@
 Configuracion:
 
 ```
-	git clone https://github.com/edusand/prueba-tecnica-tidingo.git
-	cd prueba-tecnica-tidingo
+	git clone https://github.com/edusand/prueba-tecnica-Eduardo-Sandoval.git
+	cd prueba-tecnica-Eduardo-Sandoval
 	
 	instalar nodejs de la pagina oficial o instalar homebrew para `brew install node`(mac)
 	sudo dnf install nodejs (fedora linux 38)
