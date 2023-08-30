@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<title>El Clima</title>
+
+	<link rel="stylesheet" href="./style.css">
+	<script src="./main.js" defer></script>
+</head>
+
+<body data-theme="light-theme">
+	<h1>El Clima</h1>
+
+	<div class="container">
+		<!-- Inputs -->
+		<div class="weather-input">
+			<h3 class="top-level-txt">Introduce una ciudad</h3>
+
+			<input class="city-input" type="text" placeholder="Ejemplo: Tepic, Ixtlan del Rio, Guadalajara">
+			<button class="search-btn">Buscar</button>
+
+			<div class="separator"></div>
+
+			<button class="location-btn">Usar ubicacion</button>
+		</div>
+
+		<div class="weather-data">
+			<!-- Today -->
+			<div class="current-weather">
+				<div class="details">
+					<h2 class="city-val">Tepic (2023-29-09)</h2>
+					<h4 class="tmp-val">Temperatura: 32℃</h4>
+					<h4 class="wind-val">Viento: 3.6 k/h</h4>
+					<h4 class="humidity-val">Humedad: 52%</h4>
+				</div>
+				<div class="icon">
+					<img class="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather-icon">
+					<h4 class="weather-txt-val">Partly Cloudy</h4>
+				</div>
+			</div>
+
+			<!-- Forecast -->
+			<div class="days-forecast">
+				<h2 class="top-level-txt">Pronostico</h2>
+
+				<ul class="weather-cards">
+					<!--
+					<li class="card">
+						<h2 class="localtime-val">( _____ )</h2>
+						<h4 class="tmp-val">Temperatura: __℃</h4>
+						<h4 class="wind-val">Viento: __._ K/H</h4>
+						<h4 class="humidity-val">Humedad: __%</h4>
+					</li>
+					-->
+					<li class="card">
+						<h2>( _____ )</h2>
+						<h4>______</h4>
+						<h4>Temperatura: __℃</h4>
+						<h4>Viento: __._ K/H</h4>
+						<h4>Humedad: __%</h4>
+					</li>
+					<li class="card">
+						<h2>( _____ )</h2>
+						<h4>______</h4>
+						<h4>Temperatura: __℃</h4>
+						<h4>Viento: __._ K/H</h4>
+						<h4>Humedad: __%</h4>
+					</li>
+					<li class="card">
+						<h2>( _____ )</h2>
+						<h4>______</h4>
+						<h4>Temperatura: __℃</h4>
+						<h4>Viento: __._ K/H</h4>
+						<h4>Humedad: __%</h4>
+					</li>
+					<li class="card">
+						<h2>( _____ )</h2>
+						<h4>______</h4>
+						<h4>Temperatura: __℃</h4>
+						<h4>Viento: __._ K/H</h4>
+						<h4>Humedad: __%</h4>
+					</li>
+					<li class="card">
+						<h2>( _____ )</h2>
+						<h4>______</h4>
+						<h4>Temperatura: __℃</h4>
+						<h4>Viento: __._ K/H</h4>
+						<h4>Humedad: __%</h4>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
