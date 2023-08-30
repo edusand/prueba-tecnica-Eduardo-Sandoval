@@ -6,17 +6,16 @@ Configuracion:
 `npm install`
 
 `sudo dnf install openssl`
-`openssl req -newkey rsa:2048 -nodes -keyout server.key -out server.csr`
+`openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.cert`
+```
 	Country Name: MX
 	State or Province: Nayarit
 	City: Tepic
 	Organization Name: [Default Company]
 	Organization Unit Name: []
 	Common Name: localhost
-	Email Address: user@email.com
-	A Challenge Password: 1234
-	An Optional Company Name: []
-
+	Email Address: []
+```
 Ahora tomas tu API Key y la insertas como valor para la variable `API_KEY` de `main.js`
 
 `npm start`
