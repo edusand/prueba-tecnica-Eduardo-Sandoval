@@ -1,3 +1,4 @@
+// TODO: agregar banderas y fotografias del pais/ciudad y un mapa para seleccionar
 // aqui va tu llave llave
 const API_KEY = ""; // https://www.weatherapi.com/my/
 
@@ -46,7 +47,6 @@ async function get_set_update_weather_view_for(lat, long, city, first_time) {
 	if (first_time) API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${tepic_lat},${tepic_long}`;
 	else if (city) API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
 	else API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${lat},${long}`;
-	console.log(API_URL);
 
 	await fetch (API_URL).then(res => res.json()).then((weather_data) => {
 		set(weather_data); // cadenita
@@ -59,7 +59,6 @@ async function get_set_update_weather_view_for(lat, long, city, first_time) {
 }
 
 function set(weather_data) {
-	console.log(weather_data);
 	location_name = weather_data.location.name;
 	location_region = weather_data.location.region;
 	location_country = weather_data.location.country;
@@ -87,7 +86,6 @@ function update_view() {
 	weather_txt_val_element.innerHTML = current_condition_text;
 
 	// cambiar tema dia/noche de acuerdo al lugar consultado
-	console.log(current_is_day);
 	if (current_is_day == 1) document.body.setAttribute("data-theme", "light-theme");
 	else document.body.setAttribute("data-theme", "dark-theme");
 }

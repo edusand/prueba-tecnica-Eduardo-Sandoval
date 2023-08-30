@@ -12,7 +12,8 @@ Configuracion:
 	sudo dnf install openssl
 	openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.cert
 ```
-	SSL es necesario para usar geolocalizacion en lugares aparte de localhost
+	SSL es necesario para usar geolocalizacion en lugares aparte de localhost (android me da mejor precision que fedora)
+	(funciona con valores vacios)
 		Country Name: MX
 		State or Province: Nayarit
 		City: Tepic
